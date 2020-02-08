@@ -1,14 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import {
-  Container,
-  Col,
-  Form,
-  FormGroup,
-  Label,
-  Input,
-  Button
-} from "reactstrap";
+import { Container, Col, Form, FormGroup, Input, Button } from "reactstrap";
 
 export default function SmurfForm() {
   const [newSmurf, setNewSmurf] = useState({});
