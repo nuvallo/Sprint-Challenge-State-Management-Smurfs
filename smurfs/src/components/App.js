@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import axios from "axios";
-import SmurfCard from "../components/SmurfCard";
 import SmurfForm from "../components/SmurfForm";
 import SmurfList from "./SmurfList";
 import { SmurfContext } from "../contexts/SmurfContext";

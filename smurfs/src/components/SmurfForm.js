@@ -26,7 +26,7 @@ export default function SmurfForm() {
 
   return (
     <Container className="App">
-      <Form onSubmit={handleSubmit} className="form">
+      <Form className="form">
         <Col>
           <FormGroup>
             <Input
@@ -66,7 +66,7 @@ export default function SmurfForm() {
           </FormGroup>
         </Col>
 
-        <Button color="primary" type="submit">
+        <Button color="primary" type="submit" onClick={handleSubmit}>
           Add Smurf
         </Button>
       </Form>
