@@ -3,6 +3,7 @@ import "./App.css";
 import axios from "axios";
 import SmurfCard from "../components/SmurfCard";
 import SmurfForm from "../components/SmurfForm";
+import SmurfList from "./SmurfList";
 import { SmurfContext } from "../contexts/SmurfContext";
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
       <div className="App">
         <h1>SMURFS! 2.0 W/ Redux</h1>
         <SmurfForm />
-        <SmurfCard smurfs={smurfs} />
+        <SmurfList smurfs={smurfs} />
       </div>
     </SmurfContext.Provider>
   );

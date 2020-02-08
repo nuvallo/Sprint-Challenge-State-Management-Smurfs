@@ -1,6 +1,14 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { Container, Col, Form, FormGroup, Input, Button } from "reactstrap";
+import {
+  Container,
+  Col,
+  Form,
+  FormGroup,
+  Label,
+  Input,
+  Button
+} from "reactstrap";
 
 export default function SmurfForm() {
   const [newSmurf, setNewSmurf] = useState({});
@@ -9,10 +17,11 @@ export default function SmurfForm() {
     setNewSmurf({ ...newSmurf, [event.target.name]: event.target.value });
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = e => {
     axios.post("http://localhost:3333/smurfs", newSmurf).then(res => {
       console.log(res);
     });
+    e.preventDefault();
   };
 
   return (
