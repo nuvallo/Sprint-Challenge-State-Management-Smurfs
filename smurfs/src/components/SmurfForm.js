@@ -13,7 +13,8 @@ export default function SmurfForm() {
     axios.post("http://localhost:3333/smurfs", newSmurf).then(res => {
       console.log(res);
     });
-    e.preventDefault();
+
+    console.log({ ...newSmurf });
   };
 
   return (

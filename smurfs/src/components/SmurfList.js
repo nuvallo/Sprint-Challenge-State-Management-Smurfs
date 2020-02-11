@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { SmurfContext } from "../contexts/SmurfContext.js";
+import { SmurfContext } from "../contexts/smurfContext";
 import SmurfCard from "./SmurfCard.js";
 
 const SmurfList = () => {

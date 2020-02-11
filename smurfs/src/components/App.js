@@ -3,7 +3,7 @@ import "./App.css";
 import axios from "axios";
 import SmurfForm from "../components/SmurfForm";
 import SmurfList from "./SmurfList";
-import { SmurfContext } from "../contexts/SmurfContext";
+import { SmurfContext } from "../contexts/smurfContext";
 
 function App() {
   const [smurfs, setSmurfs] = useState([]);
